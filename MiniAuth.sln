@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniAuth.API", "MiniAuth.API\MiniAuth.API.csproj", "{96231C1A-317F-424F-8D6C-622DF0E0F5F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniAuth.Domain", "MiniAuth.Domain\MiniAuth.Domain.csproj", "{BB5D4508-3994-4BA3-BC27-4812941288FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniAuth.Infrastructure", "MiniAuth.Infrastructure\MiniAuth.Infrastructure.csproj", "{8F37FC7C-B6F9-4B96-851E-7935BB465839}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniAuth.Application", "MiniAuth.Application\MiniAuth.Application.csproj", "{EC3E3B91-3D4B-4C57-974A-3C6B09FC1024}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96231C1A-317F-424F-8D6C-622DF0E0F5F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96231C1A-317F-424F-8D6C-622DF0E0F5F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96231C1A-317F-424F-8D6C-622DF0E0F5F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96231C1A-317F-424F-8D6C-622DF0E0F5F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB5D4508-3994-4BA3-BC27-4812941288FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB5D4508-3994-4BA3-BC27-4812941288FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB5D4508-3994-4BA3-BC27-4812941288FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB5D4508-3994-4BA3-BC27-4812941288FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F37FC7C-B6F9-4B96-851E-7935BB465839}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F37FC7C-B6F9-4B96-851E-7935BB465839}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F37FC7C-B6F9-4B96-851E-7935BB465839}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F37FC7C-B6F9-4B96-851E-7935BB465839}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC3E3B91-3D4B-4C57-974A-3C6B09FC1024}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC3E3B91-3D4B-4C57-974A-3C6B09FC1024}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC3E3B91-3D4B-4C57-974A-3C6B09FC1024}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC3E3B91-3D4B-4C57-974A-3C6B09FC1024}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
