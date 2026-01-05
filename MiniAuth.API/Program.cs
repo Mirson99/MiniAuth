@@ -1,21 +1,33 @@
+using FluentValidation;
+using MiniAuth.API.Middleware;
+using MiniAuth.Application;
+using MiniAuth.Application.Auth.Commands.Register;
+using MiniAuth.Application.Common.Behaviors;
+using MiniAuth.Infrastructure;
+
 var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
-
+builder.Services.AddInfrastructure(
+    builder.Configuration,
+    builder.Environment);
+builder.Services.AddJwtAuthentication(builder.Configuration);
+builder.Services.AddPermissionAuthorization();
 builder.Services.AddControllers();
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
-
+builder.Services.AddApplication(builder.Configuration);
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 var app = builder.Build();
+app.UseMiddleware<GlobalExceptionHandlingMiddleware>();
+app.UseSwagger();
+app.UseSwaggerUI();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
 }
 
 app.UseHttpsRedirection();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
